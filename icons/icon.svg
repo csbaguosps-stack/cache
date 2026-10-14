@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1e3a8a" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Squircle with shadow -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bgGrad)" filter="url(#shadow)"/>
+  
+  <!-- Subtle glass shine -->
+  <path d="M 8 36 C 8 20.5 20.5 8 36 8 L 92 8 C 107.5 8 120 20.5 120 36 C 120 48 85 64 8 60 Z" fill="white" opacity="0.12"/>
+
+  <!-- Trash Can / Cleaner Body -->
+  <g fill="white" transform="translate(32, 28)">
+    <!-- Lid handle -->
+    <rect x="22" y="4" width="20" height="7" rx="3.5" />
+    <!-- Lid bar -->
+    <rect x="6" y="13" width="52" height="8" rx="4" />
+    <!-- Body container -->
+    <path d="M 12 25 L 16 68 C 16.5 71 19 73 22 73 L 42 73 C 45 73 47.5 71 48 68 L 52 25 Z" opacity="0.95" />
+    <!-- Vertical flutes / cutout slots -->
+    <rect x="23" y="32" width="4" height="30" rx="2" fill="#2563eb" />
+    <rect x="31" y="32" width="4" height="30" rx="2" fill="#2563eb" />
+    <rect x="39" y="32" width="4" height="30" rx="2" fill="#2563eb" />
+  </g>
+
+  <!-- Sparkle top-right -->
+  <g fill="#93c5fd" transform="translate(86, 26)">
+    <path d="M 12 0 L 14.5 9 L 24 12 L 14.5 15 L 12 24 L 9.5 15 L 0 12 L 9.5 9 Z" fill="#ffffff" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.2))"/>
+  </g>
+</svg>

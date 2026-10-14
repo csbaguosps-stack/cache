@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Auto History Wipe",
+  "version": "1.0.0",
+  "description": "Otomatis membersihkan histori browsing, cache, cookie, dan data privasi browser dengan jadwal berkala dan rentang waktu kustom. Copyright by cs.baguosps@gmail.com",
+  "author": "cs.baguosps@gmail.com",
+  "permissions": [
+    "browsingData",
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://cache.app.winseeoptik.com/*",
+    "http://localhost/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Auto History Wipe"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

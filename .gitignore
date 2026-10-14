@@ -1,0 +1,10 @@
+# Auto History Wipe - Git Ignore
+# Copyright (c) 2026 by cs.baguosps@gmail.com
+
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
+.idea/

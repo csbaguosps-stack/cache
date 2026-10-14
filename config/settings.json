@@ -1,0 +1,24 @@
+{
+    "copyright": "Copyright (c) 2026 by cs.baguosps@gmail.com. All rights reserved.",
+    "extensionEnabled": true,
+    "timeRange": "all",
+    "customDays": 1,
+    "dataTypes": {
+        "history": false,
+        "downloads": false,
+        "cache": true,
+        "cookies": false,
+        "localStorage": false,
+        "passwords": false,
+        "formData": false
+    },
+    "autoClearOnClose": false,
+    "enableTimed": true,
+    "timedInterval": 5,
+    "timedUnit": "minutes",
+    "version": "1.0.0",
+    "updatedAt": 1791948845567,
+    "forceWipeTimestamp": 1791948845567,
+    "announcement": "Sistem Auto History Wipe aktif dan tersinkronisasi.",
+    "serverUrl": "https://cache.app.winseeoptik.com"
+}
