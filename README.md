@@ -5,6 +5,10 @@
 > **Copyright &copy; 2026 by [cs.baguosps@gmail.com](mailto:cs.baguosps@gmail.com)**. All rights reserved.  
 > **GitHub Repository:** [https://github.com/csbaguosps-stack/cache](https://github.com/csbaguosps-stack/cache)
 
+<p align="center">
+  <img src="screenshots/popup_preview.png" alt="Auto History Wipe Popup Preview" width="300">
+</p>
+
 ---
 
 ## 📌 Ringkasan Proyek
