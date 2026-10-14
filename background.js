@@ -25,7 +25,7 @@ const DEFAULT_SETTINGS = {
   nextScheduledTime: null,
   serverUpdatedAt: 0,
   lastForceWipe: 0,
-  remoteServerUrl: 'https://cache.app.winseeoptik.com'
+  remoteServerUrl: ''
 };
 
 const ALARM_NAME = 'auto_history_wipe_alarm';
@@ -195,11 +195,12 @@ async function executeClearData(settings = null, isManual = false) {
 async function syncRemoteConfig() {
   const settings = await getSettings();
   
-  // List of possible endpoints: production first, localhost fallback
-  const endpoints = [
-    settings.remoteServerUrl ? `${settings.remoteServerUrl.replace(/\/$/, '')}/api/config` : 'https://cache.app.winseeoptik.com/api/config',
-    'http://localhost/chace/index.php?route=api/config'
-  ];
+  // List of possible endpoints: configured server first, then localhost fallback
+  const endpoints = [];
+  if (settings.remoteServerUrl && settings.remoteServerUrl.trim()) {
+    endpoints.push(`${settings.remoteServerUrl.trim().replace(/\/$/, '')}/api/config`);
+  }
+  endpoints.push('http://localhost/chace/index.php?route=api/config');
 
   let serverData = null;
 

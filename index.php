@@ -1,7 +1,6 @@
 <?php
 /**
  * Auto History Wipe - Front Controller / Router (MVC)
- * Target Domain: cache.app.winseeoptik.com
  * Copyright (c) 2026 by cs.baguosps@gmail.com
  * All rights reserved.
  */

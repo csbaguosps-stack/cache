@@ -279,7 +279,7 @@ $types = $settings['dataTypes'] ?? [];
         <div class="form-two-cols">
           <div class="form-group">
             <label for="serverUrl" class="form-label">Domain Server Sinkronisasi:</label>
-            <input type="text" name="serverUrl" id="serverUrl" class="form-control" value="<?= htmlspecialchars($settings['serverUrl'] ?? 'https://cache.app.winseeoptik.com', ENT_QUOTES, 'UTF-8') ?>">
+            <input type="text" name="serverUrl" id="serverUrl" class="form-control" value="<?= htmlspecialchars($settings['serverUrl'] ?? BASE_URL, ENT_QUOTES, 'UTF-8') ?>" placeholder="https://domain-anda.com atau http://localhost/chace">
             <small class="form-help">Domain yang akan dihubungi oleh ekstensi untuk menarik konfigurasi otomatis.</small>
           </div>
 

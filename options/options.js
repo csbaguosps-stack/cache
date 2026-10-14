@@ -283,8 +283,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!isExtensionEnv) {
         setTimeout(() => {
           manualSyncBtn.disabled = false;
-          manualSyncBtn.textContent = '🔄 Sync dari Server';
-          showToast('Tersinkronisasi dengan server cache.app.winseeoptik.com!');
+          manualSyncBtn.textContent = '🔄 Sync Config';
+          showToast('Tersinkronisasi dengan server backend!');
         }, 600);
         return;
       }

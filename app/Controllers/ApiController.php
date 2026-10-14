@@ -39,7 +39,7 @@ class ApiController {
         $settings = $this->model->getAll();
         echo json_encode([
             'status' => 'success',
-            'server' => 'cache.app.winseeoptik.com',
+            'server' => $_SERVER['HTTP_HOST'] ?? 'localhost',
             'timestamp' => (int)(microtime(true) * 1000),
             'config' => $settings
         ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);

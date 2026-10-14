@@ -28,7 +28,7 @@
       </div>
       <div class="server-status-pill">
         <span class="live-dot"></span>
-        <span class="server-name">cache.app.winseeoptik.com</span>
+        <span class="server-name"><?= htmlspecialchars($_SERVER['HTTP_HOST'] ?? 'Server Active', ENT_QUOTES, 'UTF-8') ?></span>
         <span class="version-tag">v<?= htmlspecialchars($settings['version'] ?? '1.0.0', ENT_QUOTES, 'UTF-8') ?></span>
       </div>
     </div>

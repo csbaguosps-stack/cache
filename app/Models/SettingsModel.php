@@ -28,7 +28,7 @@ class SettingsModel {
         'updatedAt' => 0,
         'forceWipeTimestamp' => null,
         'announcement' => 'Sistem Auto History Wipe aktif dan tersinkronisasi.',
-        'serverUrl' => 'https://cache.app.winseeoptik.com'
+        'serverUrl' => ''
     ];
 
     public function __construct(string $filePath = SETTINGS_FILE) {

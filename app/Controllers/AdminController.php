@@ -56,7 +56,7 @@ class AdminController {
             'timedUnit' => $_POST['timedUnit'] ?? 'minutes',
             'version' => trim($_POST['version'] ?? '1.0.0'),
             'announcement' => trim($_POST['announcement'] ?? ''),
-            'serverUrl' => trim($_POST['serverUrl'] ?? 'https://cache.app.winseeoptik.com')
+            'serverUrl' => trim($_POST['serverUrl'] ?? BASE_URL)
         ];
 
         $this->model->save($payload);

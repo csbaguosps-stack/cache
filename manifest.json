@@ -11,8 +11,8 @@
     "notifications"
   ],
   "host_permissions": [
-    "https://cache.app.winseeoptik.com/*",
-    "http://localhost/*"
+    "http://localhost/*",
+    "https://*/*"
   ],
   "action": {
     "default_popup": "popup/popup.html",

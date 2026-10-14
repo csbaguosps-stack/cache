@@ -1,7 +1,6 @@
 <?php
 /**
  * Application Configuration
- * Domain: cache.app.winseeoptik.com
  * Copyright (c) 2026 by cs.baguosps@gmail.com
  */
 
@@ -15,7 +14,7 @@ define('APP_PATH', ROOT_PATH . DIRECTORY_SEPARATOR . 'app');
 define('CONFIG_PATH', ROOT_PATH . DIRECTORY_SEPARATOR . 'config');
 define('SETTINGS_FILE', CONFIG_PATH . DIRECTORY_SEPARATOR . 'settings.json');
 
-// Base URL detection (supports localhost/chace/ and cache.app.winseeoptik.com)
+// Base URL detection (supports dynamic host and localhost)
 $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443);
 $protocol = $isHttps ? 'https://' : 'http://';
 $host = $_SERVER['HTTP_HOST'] ?? 'localhost';

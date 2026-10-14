@@ -3,8 +3,7 @@
 > **Ekstensi Pembersih Riwayat & Data Privasi Browser Otomatis** dilengkapi **Dashboard Admin PHP (Arsitektur MVC)** untuk sinkronisasi konfigurasi terpusat.
 > 
 > **Copyright &copy; 2026 by [cs.baguosps@gmail.com](mailto:cs.baguosps@gmail.com)**. All rights reserved.  
-> **GitHub Repository:** [https://github.com/csbaguosps-stack/cache](https://github.com/csbaguosps-stack/cache)  
-> **Target Domain:** `cache.app.winseeoptik.com`
+> **GitHub Repository:** [https://github.com/csbaguosps-stack/cache](https://github.com/csbaguosps-stack/cache)
 
 ---
 
@@ -12,7 +11,7 @@
 
 **Auto History Wipe** adalah ekosistem manajemen privasi browser lengkap yang terdiri dari:
 1. **Chrome Extension (Manifest V3):** Ekstensi browser modern dengan tema **Putih - Biru** (*Clean White & Royal Blue Modern UI*) untuk membersihkan cache, cookies, riwayat penjelajahan, download, kata sandi, dan data formulir secara otomatis.
-2. **PHP Backend & Admin Dashboard (MVC):** Sistem backend berbasis PHP Native murni dengan pola **Model-View-Controller (MVC)** yang dapat di-hosting di **`cache.app.winseeoptik.com`** (atau dijalankan di XAMPP lokal). Dashboard ini dirancang khusus tanpa login sehingga admin dapat langsung mengubah pengaturan kapan saja.
+2. **PHP Backend & Admin Dashboard (MVC):** Sistem backend berbasis PHP Native murni dengan pola **Model-View-Controller (MVC)** yang dapat di-hosting di server/hosting Anda (atau dijalankan di XAMPP lokal). Dashboard ini dirancang khusus tanpa login sehingga admin dapat langsung mengubah pengaturan kapan saja.
 3. **Auto-Sync & Remote Control:** Setiap kali admin mengubah konfigurasi atau memicu *Force Wipe* dari dashboard web, semua ekstensi yang terpasang pada browser client akan **otomatis tersinkronisasi dan diperbarui**!
 
 ---
@@ -20,7 +19,7 @@
 ## ✨ Fitur-Fitur Utama
 
 ### 1. 🖥️ Dashboard Admin PHP (Metode MVC - Tanpa Login)
-- **URL Dashboard:** `http://localhost/chace/` atau `https://cache.app.winseeoptik.com/`
+- **URL Dashboard:** `http://localhost/chace/` atau domain hosting Anda
 - **Tanpa Form Login:** Akses instan langsung ke pusat kendali.
 - **Ubah Semua Pengaturan:**
   - Status Ekstensi Global (Master On / Off).
@@ -38,7 +37,7 @@
 - **Ikon Toolbar Bersih & Tajam:** Ikon resolusi tinggi (16px, 32px, 48px, 128px) antialiasing tajam tanpa terhalang badge besar yang mengganggu.
 - **⚡ Tombol Auto Reload Langsung di Ekstensi:** Pengguna maupun admin tidak perlu repot membuka halaman `chrome://extensions/` untuk me-reload ekstensi saat ada kode atau versi baru. Cukup klik tombol **Reload** langsung dari dalam Popup maupun Halaman Settings!
 - **Deteksi Versi Baru Otomatis:** Kartu reload di popup akan otomatis berubah menjadi kuning dengan tanda *Update vX.X.X Siap!* jika versi di server dashboard lebih baru dari versi ekstensi yang sedang aktif.
-- **Halaman Pengaturan Lengkap (`options.html`):** Pengaturan individual per pengguna dengan indikator sinkronisasi ke server `cache.app.winseeoptik.com` dan tombol *⚡ Reload Ekstensi*.
+- **Halaman Pengaturan Lengkap (`options.html`):** Pengaturan individual per pengguna dengan indikator status sinkronisasi ke server dashboard dan tombol *⚡ Reload Ekstensi*.
 - **Menu Popup Cepat (`popup.html`):** Tampilan status real-time, live countdown timer badge, tombol *Clear Data Now*, dan tombol *⚡ Reload*.
 
 ---
@@ -104,18 +103,16 @@ c:\xampp\htdocs\chace\
    - Klik **Load unpacked**, lalu pilih folder: `C:\xampp\htdocs\chace`
 3. Coba ubah pengaturan di Dashboard Admin (misal: ubah interval menit atau centang data), lalu simpan. Ekstensi akan otomatis mengambil pembaruan tersebut!
 
-### B. Deployment ke `cache.app.winseeoptik.com`:
-1. Unggah seluruh isi folder `C:\xampp\htdocs\chace` ke direktori root hosting `cache.app.winseeoptik.com` (biasanya `public_html` atau sesuai konfigurasi subdomain).
+### B. Deployment ke Hosting Server Anda:
+1. Unggah seluruh isi folder `C:\xampp\htdocs\chace` ke direktori root hosting / domain Anda (biasanya `public_html` atau sesuai konfigurasi subdomain Anda).
 2. Pastikan file `.htaccess` terunggah dan module Apache `mod_rewrite` aktif.
-3. Dashboard admin dapat langsung diakses di:  
-   👉 **`https://cache.app.winseeoptik.com/`**
-4. File `background.js` pada ekstensi sudah dikonfigurasi untuk secara otomatis mengontak `https://cache.app.winseeoptik.com/api/config`.
+3. Dashboard admin dapat langsung diakses di domain hosting Anda (contoh: `https://domain-anda.com/`).
+4. Masukkan URL domain hosting Anda pada kolom **Domain Server Sinkronisasi** di Dashboard Admin dan simpan. Ekstensi client akan otomatis terhubung ke domain tersebut.
 
 ---
 
 ## 📄 Hak Cipta & Kontak Pengembang
 
 - **Nama Ekstensi:** Auto History Wipe
-- **Target Subdomain:** `cache.app.winseeoptik.com`
 - **Pengembang / Kontak:** [cs.baguosps@gmail.com](mailto:cs.baguosps@gmail.com)
 - **Copyright:** &copy; 2026 cs.baguosps@gmail.com. All rights reserved.
